@@ -1,0 +1,23 @@
+/* src/pages/Home.css */
+
+.home-container {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home-container > h1 {
+  margin: 0;
+}
+
+.home-title {
+  color: #2e8b57;  
+}
+
+.home-logo {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 280px;
+  min-height: 100px;
+  margin: 20px;
+}

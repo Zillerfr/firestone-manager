@@ -1,0 +1,54 @@
+/* src/components/Header.css */
+.app-header {
+  color: var(--body-text-color);
+  background-color: var(--header-footer-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.app-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+
+  padding-left: 20px;
+  padding-right: 40px;
+  flex-wrap: wrap;
+  gap: 15px;
+  
+}
+
+.app-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.app-header nav ul li a {
+  color: var(--body-text-color);
+  text-decoration: underline;
+  font-size: 1.2em;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.app-header nav ul li a:hover {
+  color: var(--body-text-color-highlight);
+  text-decoration: none;
+}

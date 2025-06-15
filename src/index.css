@@ -1,68 +1,54 @@
+@import 'flag-icons/css/flag-icons.min.css';
+
+/* common */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* rarity colors */
+    --rarity-none: #1B1E1F;
+    --rarity-common: #A66A3B;
+    --rarity-uncommon: #4fd742;
+    --rarity-rare: #1d4bd4;
+    --rarity-epic: #b240f6;
+    --rarity-legendary: #F77115;
+    --rarity-mythic: #4ad3dc;
+    --rarity-titan: #fcce53;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* common colors */
+    --body-background: #282c34;
+    --body-text-color: #DBE0E2;
+    --body-text-color-highlight: #C2CACD;
+    --header-footer-background: #20232a;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    --zone-background: #282D2F;
+    --zone-border-color: #0E0F10;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+    --input-background: #1B1E1F;
+    --input-text-color: #DBE0E2;
+    --input-border: #0E0F10;
+    --input-radio-background: #1B1E1F;
+    --input-radio-border: #A9AAAA;
+    --input-radio-color: #848484;
+    --input-checkbox-background: #1B1E1F;
+    --input-checkbox-border: #0E0F10;
+    --input-checkbox-color: #A9AAAA;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+    --slider-background: #282D2F;
+    --slider-mark: #DBE0E2;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+    --button-tab-background: #85959B;
+    --button-tab-text: #000000;
+    --button-tab-background-hover: #9DAAAF;
+    --button-tab-text-hover: #000000;
+    --inactive-tab-background: #0E0F10;
+    --inactive-tab-text: #DBE0E2;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+    --toggle-on-background: #C2CACD;
+    --toggle-off-background: #0E0F10;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    --health-bar-background: #000000;
+    --health-bar-color: #282D2F;
+
+    --dropdown-background: #9DAAAF;
+    --dropdown-color: #000000;
+    --dropdown-arrow-background: #8C9193;
+    --dropdown-arrow-color: #000000;
 }

@@ -1,42 +1,40 @@
+body {
+	background: var(--body-background);
+	color: var(--body-text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Styles pour le contenu principal */
+main {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding-top: 20px; /* Espace pour le header */
+  padding-bottom: 70px; /* Espace pour le footer */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styles pour la page d'accueil (centrée verticalement) */
+.main-content-centered {
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Styles pour les autres pages (alignées en haut, sous le header) */
+.main-content-top {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
 }
