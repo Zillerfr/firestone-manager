@@ -1,4 +1,94 @@
 {
-  "home_message": "Gestion de Compte",
-  "home_link": "Accueil"
+  "home": {
+    "home_message": "Gestion de Compte"
+  },
+  "characters":{
+    "title": "Gestion des personnages",
+    "title_heroes": "Héros",
+    "title_mercenaries": "Mercenaires",
+    "title_gods": "Dieux"
+  },
+  "header": {
+    "home_link": "Accueil",
+    "characters_link": "Personnages"
+  },
+  "items": {
+    "gear": "Équipement",
+    "jewel": "Bijoux",
+    "soulstone": "Pierres d'âme"
+  },
+  "speciality": {
+    "damage": "Damage",
+    "healer": "Healer",
+    "tank": "Tank"
+  },
+  "warmachines": {
+    "aegis": "Egide",
+    "cloudfist": "Poing céleste",
+    "curator": "Conservateur",
+    "earthshatterer": "Briseterre",
+    "firecracker": "Feu d'artfice",
+    "fortress": "Forteresse",
+    "goliath": "Goliath",
+    "harvester": "Moissonneuse",
+    "hunter": "Chasseur",
+    "judgement": "Jugement",
+    "sentinel": "Sentinelle",
+    "talos": "Talos",
+    "thunderclap": "Coup de tonnerre"
+  },
+  "rarities": {
+    "none": "Aucun",
+    "common": "Ordinaire",
+    "uncommon": "Extraordinaire",
+    "rare": "Rare",
+    "epic": "Épique",
+    "legendary": "Légendaire",
+    "mythic": "Mythique",
+    "titan": "Titan",
+    "angel": "Ange"
+  },
+  "gear": {
+    "weapon": "Arme",
+    "chest": "Torse",
+    "boots": "Bottes",
+    "wrist": "Poignet",
+    "shoulder": "Épaule",
+    "belt": "Ceinture",
+    "ring": "Anneau",
+    "relic": "Relique"
+  },
+  "jewel": {
+    "ankh": "Ânkh",
+    "rune": "Rune",
+    "idol": "Idole",
+    "talisman": "Talisman",
+    "necklace": "Collier",
+    "trinket": "Babiole"
+  },
+  "soulstone": {
+    "focus": "Concentration",
+    "stamina": "Endurance",
+    "courage": "Courage",
+    "wisdom": "Sagesse",
+    "faith": "Foi",
+    "charisma": "Charisme"
+  },
+  "effects": {
+    "damageSelf": "Dégâts perso",
+    "healthSelf": "Santé perso",
+    "resistanceSelf": "Résistance perso",
+    "damageAll": "Dégâts tous",
+    "healthAll": "Santé tous",
+    "resistanceAll": "Résistance tous",
+    "goldGain": "Gains or",
+    "damageHealthResistanceAll": "Dégâts/Santé/Résistance tous",
+    "damage": "Dégâts",
+    "health": "Santé",
+    "resistance": "Resistance",
+    "damageHealth": "Dégâts/Santé",
+    "damageResistance": "Dégâts/Resistance",
+    "healthResistance": "Santé/Resistance",
+    "firestoneGain": "Gains Firestones"
+  }
 }

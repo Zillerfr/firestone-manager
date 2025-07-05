@@ -9,12 +9,14 @@ export default function Header() {
 			<nav>
 				<ul className="nav-left">
 					<li>
-						<Link to="/">{t('home_link')}</Link>
+						<Link to="/">{t('header.home_link')}</Link>
 					</li>
 				</ul>
 				<ul className="nav-right">
-					<li>TODO</li>
-					<li>TODO</li>
+					<li>
+						<Link to="/characters">{t('header.characters_link')}</Link>
+					</li>
+					<li><Link to="/">{'TODO'}</Link></li>
 				</ul>
 			</nav>
 		</header>

@@ -1,0 +1,74 @@
+[
+        {
+            "id": "focus",
+            "tier": 1,
+            "position": 1,
+            "effectBase": "tier1",
+            "effectType": "damageSelf",
+            "damage": 1,
+            "health": 0,
+            "resistance": 0,
+            "firestones": 0,
+            "gold" : 0
+        },
+        {
+            "id": "stamina",
+            "tier": 1,
+            "position": 2,
+            "effectBase": "tier1",
+            "effectType": "healthSelf",
+            "damage": 0,
+            "health": 1,
+            "resistance": 0,
+            "firestones": 0,
+            "gold" : 0
+        },
+        {
+            "id": "courage",
+            "tier": 1,
+            "position": 3,
+            "effectBase": "tier1",
+            "effectType": "resistanceSelf",
+            "damage": 0,
+            "health": 0,
+            "resistance": 1,
+            "firestones": 0,
+            "gold" : 0
+        },
+        {
+            "id": "wisdom",
+            "tier": 2,
+            "position": 1,
+            "effectBase": "wisdom",
+            "effectType": "goldGain",
+            "damage": 0,
+            "health": 0,
+            "resistance": 0,
+            "firestones": 0,
+            "gold" : 1
+        },
+        {
+            "id": "faith",
+            "tier": 2,
+            "position": 2,
+            "effectBase": "faith",
+            "effectType": "firestoneGain",
+            "damage": 0,
+            "health": 0,
+            "resistance": 0,
+            "firestones": 1,
+            "gold" : 0
+        },
+        {
+            "id": "charisma",
+            "tier": 2,
+            "position": 3,
+            "effectBase": "charisma",
+            "effectType": "damageHealthResistanceAll",
+            "damage": 1,
+            "health": 1,
+            "resistance": 1,
+            "firestones": 0,
+            "gold" : 0
+        }
+    ]

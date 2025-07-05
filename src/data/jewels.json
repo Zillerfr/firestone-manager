@@ -1,0 +1,56 @@
+[
+        {
+            "id": "ankh",
+            "effectType": "damage",
+            "tier": 1,
+            "position": 1,
+            "damage": 1,
+            "health": 0,
+            "armor": 0
+        },
+        {
+            "id": "rune",
+            "effectType": "health",
+            "tier": 1,
+            "position": 2,
+            "damage": 0,
+            "health": 1,
+            "armor": 0
+        },
+        {
+            "id": "idol",
+            "effectType": "resistance",
+            "tier": 1,
+            "position": 3,
+            "damage": 0,
+            "health": 0,
+            "armor": 1
+        },
+        {
+            "id": "talisman",
+            "effectType": "damageHealth",
+            "tier": 2,
+            "position": 1,
+            "damage": 1,
+            "health": 1,
+            "armor": 0
+        },
+        {
+            "id": "necklace",
+            "effectType": "damageResistance",
+            "tier": 2,
+            "position": 2,
+            "damage": 1,
+            "health": 0,
+            "armor": 1
+        },
+        {
+            "id": "trinket",
+            "effectType": "healthResistance",
+            "tier": 2,
+            "position": 3,
+            "damage": 0,
+            "health": 1,
+            "armor": 1
+        }
+    ]

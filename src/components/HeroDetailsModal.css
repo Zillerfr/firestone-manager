@@ -1,0 +1,195 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour l'overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--body-background-color); /* Couleur de fond opaque */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    color: var(--body-text-color);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.modal-hero-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.modal-header h2 {
+    margin-left: 10px;
+    color: var(--header-text-color);
+    flex-shrink: 0; /* Empêche le titre de rétrécir excessivement */
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--body-text-color);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.top-controls {
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne sur mobile */
+    align-items: center;
+    gap: 40px; /* Espace entre les éléments */
+    margin-right: 40px; /* Ajuste pour être à côté de l'image/titre */
+    flex-grow: 1; /* Permet à cette section de prendre l'espace restant */
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    min-width: 250px;
+}
+
+.top-controls .form-group {
+    margin-bottom: 0; /* Pas de marge en bas pour ces éléments en ligne */
+    display: flex;
+    align-items: center;
+}
+
+.top-controls .form-group label {
+    margin-bottom: 0;
+    margin-right: 8px;
+    white-space: nowrap; /* Empêche le label de passer à la ligne */
+}
+
+.top-controls .form-group input[type="checkbox"] {
+    margin: 0; /* Réinitialise les marges du checkbox */
+}
+
+
+.modal-body {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 15px;
+    border-top: 1px solid var(--body-border);
+}
+
+.save-button, .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.save-button {
+    background-color: var(--primary-button-color);
+    color: white;
+}
+
+.save-button:hover {
+    background-color: var(--primary-button-hover-color);
+}
+
+.cancel-button {
+    background-color: var(--secondary-button-color);
+    color: var(--secondary-button-text-color);
+}
+
+.cancel-button:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+/* Styles pour les raretés */
+.rarity-none { color: var(--rarity-none); }
+.rarity-common { color: var(--rarity-common); }
+.rarity-uncommon { color: var(--rarity-uncommon); }
+.rarity-rare { color: var(--rarity-rare); }
+.rarity-epic { color: var(--rarity-epic); }
+.rarity-legendary { color: var(--rarity-legendary); }
+.rarity-mythic { color: var(--rarity-mythic); }
+.rarity-titan { color: var(--rarity-titan); }
+.rarity-angel { color: var(--rarity-angel); }
+
+
+/* Ajout de variables CSS pour les couleurs si non déjà définies */
+:root {
+    --body-background-color: #2b2b2b; /* Exemple de couleur de fond sombre */
+    --body-text-color: #e0e0e0;       /* Exemple de couleur de texte clair */
+    --body-border: #444;              /* Exemple de couleur de bordure */
+    --header-text-color: #ffffff;     /* Exemple de couleur de texte d'en-tête */
+    --input-background-color: #3a3a3a; /* Exemple de couleur de fond d'input */
+    --input-text-color: #ffffff;      /* Exemple de couleur de texte d'input */
+    --primary-button-color: #007bff;
+    --primary-button-hover-color: #0056b3;
+    --secondary-button-color: #6c757d;
+    --secondary-button-text-color: #ffffff;
+    --secondary-button-hover-color: #5a6268;
+    --card-background-color: #333; /* Pour les HeroItem */
+}
+
+/* Styles pour les sélecteurs de rareté (à définir dans ItemCard.css) */
+.rarity-select-dropdown {
+    position: absolute;
+    background-color: var(--input-background-color);
+    border: 1px solid var(--body-border);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.rarity-option {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.rarity-option:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+.modal-header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-header-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}

@@ -1,0 +1,164 @@
+[
+    {
+        "id": "none",
+        "maxLevel" : 0,
+        "hasSeal": false,
+        "baseEffectGear" : {
+            "tier1" : 0,
+            "tier2" : 0,
+            "ring" : 0,
+            "relic" : 0
+        },
+        "baseEffectJewel" : 0,
+        "baseEffectSoulstone" : {
+            "tier1" : 0,
+            "wisdom" : 0,
+            "faith" : 0,
+            "charisma" : 0
+        }
+    },
+    {
+        "id": "common",
+        "maxLevel" : 2,
+        "hasSeal": false,
+        "baseEffectGear" : {
+            "tier1" : 4,
+            "tier2" : 3,
+            "ring" : 2.5,
+            "relic" : 8.5
+        },
+        "baseEffectJewel" : 200,
+        "baseEffectSoulstone" : {
+            "tier1" : 4,
+            "wisdom" : 2.5,
+            "faith" : 2,
+            "charisma" : 8.5
+        }
+    },
+    {
+        "id": "uncommon",
+        "maxLevel" : 4,
+        "hasSeal": false,
+        "baseEffectGear" : {
+            "tier1" : 10,
+            "tier2" : 8,
+            "ring" : 5.5,
+            "relic" : 23.5
+        },
+        "baseEffectJewel" : 400,
+        "baseEffectSoulstone" : {
+            "tier1" : 10,
+            "wisdom" : 5.5,
+            "faith" : 4,
+            "charisma" : 23.5
+        }
+    },
+    {
+        "id": "rare",
+        "maxLevel" : 6,
+        "hasSeal": false,
+        "baseEffectGear" : {
+            "tier1" : 28,
+            "tier2" : 21,
+            "ring" : 15,
+            "relic" : 68.5
+        },
+        "baseEffectJewel" : 800,
+        "baseEffectSoulstone" : {
+            "tier1" : 28,
+            "wisdom" : 15,
+            "faith" : 10,
+            "charisma" : 68.5
+        }
+    },
+    {
+        "id": "epic",
+        "maxLevel" : 8,
+        "hasSeal": false,
+        "baseEffectGear" : {
+            "tier1" : 88,
+            "tier2" : 62,
+            "ring" : 42,
+            "relic" : 203.5
+        },
+        "baseEffectJewel" : 1600,
+        "baseEffectSoulstone" : {
+            "tier1" : 88,
+            "wisdom" : 42,
+            "faith" : 28,
+            "charisma" : 203.5
+        }
+    },
+    {
+        "id": "legendary",
+        "maxLevel" : 10,
+        "hasSeal": true,
+        "baseEffectGear" : {
+            "tier1" : 244,
+            "tier2" : 183,
+            "ring" : 123,
+            "relic" : 608.5
+        },
+        "baseEffectJewel" : 3200,
+        "baseEffectSoulstone" : {
+            "tier1" : 244,
+            "wisdom" : 123,
+            "faith" : 82,
+            "charisma" : 608.5
+        }
+    },
+    {
+        "id": "mythic",
+        "maxLevel" : 12,
+        "hasSeal": true,
+        "baseEffectGear" : {
+            "tier1" : 730,
+            "tier2" : 548,
+            "ring" : 366,
+            "relic" : 1823.5
+        },
+        "baseEffectJewel" : 6400,
+        "baseEffectSoulstone" : {
+            "tier1" : 730,
+            "wisdom" : 366,
+            "faith" : 244,
+            "charisma" : 1823.5
+        }
+    },
+    {
+        "id": "titan",
+        "maxLevel" : 14,
+        "hasSeal": true,
+        "baseEffectGear" : {
+            "tier1" : 2188,
+            "tier2" : 1641,
+            "ring" : 1095,
+            "relic" : 5468.5
+        },
+        "baseEffectJewel" : 12800,
+        "baseEffectSoulstone" : {
+            "tier1" : 2188,
+            "wisdom" : 1095,
+            "faith" : 730,
+            "charisma" : 5468.5
+        }
+    },
+    {
+        "id": "angel",
+        "maxLevel" : 16,
+        "hasSeal": true,
+        "baseEffectGear" : {
+            "tier1" : 6562,
+            "tier2" : 2922,
+            "ring" : 3282,
+            "relic" : 16403.5
+        },
+        "baseEffectJewel" : 25600,
+        "baseEffectSoulstone" : {
+            "tier1" : 6562,
+            "wisdom" : 3282,
+            "faith" : 2188,
+            "charisma" : 16403.5
+        }
+    }
+]

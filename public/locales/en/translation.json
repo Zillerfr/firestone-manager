@@ -1,4 +1,94 @@
 {
-  "home_message": "Account Management",
-  "home_link": "Home"
+  "home": {
+    "home_message": "Account Management"
+  },
+  "characters":{
+    "title": "Characters management",
+    "title_heroes": "Heroes",
+    "title_mercenaries": "Mercenaries",
+    "title_gods": "Gods"
+  },  
+  "header": {
+    "home_link": "Home",
+    "characters_link": "Characters"
+  },
+  "items": {
+    "gear": "Gear",
+    "jewel": "Jewels",
+    "soulstone": "Soulstones"
+  },
+  "speciality": {
+    "damage": "Destructeur",
+    "healer": "Guérisseur",
+    "tank": "Tank"
+  },
+  "warmachines": {
+    "aegis": "Aegis",
+    "cloudfist": "Cloudfist",
+    "curator": "Curator",
+    "earthshatterer": "Earthshatterer",
+    "firecracker": "FireCracker",
+    "fortress": "Fortress",
+    "goliath": "Goliath",
+    "harvester": "Harvester",
+    "hunter": "Hunter",
+    "judgement": "Judgement",
+    "sentinel": "Sentinel",
+    "talos": "Talos",
+    "thunderclap": "Thunderclap"
+  },
+  "rarities": {
+    "none": "None",
+    "common": "Common",
+    "uncommon": "Uncommon",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary",
+    "mythic": "Mythic",
+    "titan": "Titan",
+    "angel": "Angel"
+  },
+  "gear": {
+    "weapon": "Weapon",
+    "chest": "Chest",
+    "boots": "Boots",
+    "wrist": "Wrist",
+    "shoulder": "Shoulder",
+    "belt": "Belt",
+    "ring": "Ring",
+    "relic": "Relic"
+  },
+  "jewel": {
+    "ankh": "Ankh",
+    "rune": "Rune",
+    "idol": "Idol",
+    "talisman": "Talisman",
+    "necklace": "Necklace",
+    "trinket": "Trinket"
+  },
+  "soulstone": {
+    "focus": "Focus",
+    "stamina": "Stamina",
+    "courage": "Courage",
+    "wisdom": "Wisdom",
+    "faith": "Faith",
+    "charisma": "Charisma"
+  },
+  "effects": {
+    "damageSelf": "Character damage",
+    "healthSelf": "Caracter health",
+    "resistanceSelf": "Character resistance",
+    "damageAll": "Damage all",
+    "healthAll": "Health all",
+    "resistanceAll": "Resistance all",
+    "goldGain": "Gold gain",
+    "damageHealthResistanceAll": "Damage/Health/Resistance all",
+    "damage": "Damage",
+    "health": "Health",
+    "resistance": "Resistance",
+    "damageHealth": "Damage/Health",
+    "damageResistance": "Damage/Resistance",
+    "healthResistance": "Health/Resistance",
+    "firestoneGain": "Firestone gain"
+  }
 }

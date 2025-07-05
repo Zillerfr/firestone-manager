@@ -1,0 +1,14 @@
+[
+    {
+        "id": "gear",
+        "nbTier": 3
+    }, 
+    {
+        "id": "jewel",
+        "nbTier": 2
+    },
+    {
+        "id": "soulstone",
+        "nbTier": 2
+    }
+]

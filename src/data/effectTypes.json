@@ -1,0 +1,17 @@
+[
+    "damageSelf",
+    "healthSelf",
+    "resistanceSelf",
+    "damageAll",
+    "healthAll",
+    "resistanceAll",
+    "gold",
+    "damageHealthResistanceAll",
+    "damage",
+    "health",
+    "resistance",
+    "damageHealth",
+    "damageResistance",
+    "healthResistance",
+    "firestoneGain"
+]

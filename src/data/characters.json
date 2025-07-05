@@ -1,0 +1,254 @@
+[
+    {
+        "id": "talia",            
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 2
+    },
+    {
+        "id": "burt",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 4
+    },
+    {
+        "id": "solaine",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 7
+    },
+    {
+        "id": "boris",
+        "merc": false,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": 30
+    },
+    {
+        "id": "benedictus",
+        "merc": false,
+        "god": false,
+        "spec": "healer",
+        "unlockStage": 50
+    },
+    {
+        "id": "leo",
+        "merc": false,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": 150
+    },
+    {
+        "id": "muriel",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 275
+    },
+    {
+        "id": "blaze",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 400
+    },
+    {
+        "id": "luana",
+        "merc": false,
+        "god": false,
+        "spec": "healer",
+        "unlockStage": 550
+    },
+    {
+        "id": "valerius",
+        "merc": false,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": 700
+    },
+    {
+        "id": "astrid",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 800
+    },
+    {
+        "id": "ina",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 900
+    },
+    {
+        "id": "fini",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 1050
+    },
+    {
+        "id": "asmondai",
+        "merc": false,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": 1300
+    },
+    {
+        "id": "danysa",
+        "merc": false,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": 1550
+    },
+    {
+        "id": "iseris",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 1800
+    },
+    {
+        "id": "belien",
+        "merc": false,
+        "god": false,
+        "spec": "healer",
+        "unlockStage": 2050
+    },
+    {
+        "id": "sely",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 2300
+    },
+    {
+        "id": "randal",
+        "merc": false,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": 2550
+    },
+    {
+        "id": "molly",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 2800
+    },
+    {
+        "id": "layla",
+        "merc": false,
+        "god": false,
+        "spec": "healer",
+        "unlockStage": 3050
+    },
+    {
+        "id": "joe",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 3300
+    },
+    {
+        "id": "hongyu",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 3600
+    },
+    {
+        "id": "amun",
+        "merc": false,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": 3900
+    },
+    {
+        "id": "panko",
+        "merc": true,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": -1
+    },
+    {
+        "id": "yavo",
+        "merc": true,
+        "god": false,
+        "spec": "healer",
+        "unlockStage": -1
+    },
+    {
+        "id": "cirilo",
+        "merc": true,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": -1
+    },
+    {
+        "id": "vilon",
+        "merc": true,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": -1
+    },
+    {
+        "id": "anzo",
+        "merc": true,
+        "god": false,
+        "spec": "tank",
+        "unlockStage": -1
+    },
+    {
+        "id": "zelea",
+        "merc": true,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": -1
+    },
+    {
+        "id": "zoruk",
+        "merc": true,
+        "god": false,
+        "spec": "healer",
+        "unlockStage": -1
+    },
+    {
+        "id": "rickie",
+        "merc": true,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": -1
+    },
+    {
+        "id": "jess",
+        "merc": true,
+        "god": false,
+        "spec": "damage",
+        "unlockStage": -1
+    },
+    {
+        "id": "ledra",
+        "merc": false,
+        "god": true,
+        "spec": "healer",
+        "unlockStage": -1
+    },
+    {
+        "id": "yamanoth",
+        "merc": false,
+        "god": true,
+        "spec": "tank",
+        "unlockStage": -1
+    },
+    {
+        "id": "kramatak",
+        "merc": false,
+        "god": true,
+        "spec": "damage",
+        "unlockStage": -1
+    }
+]

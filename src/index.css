@@ -11,10 +11,12 @@
     --rarity-legendary: #F77115;
     --rarity-mythic: #4ad3dc;
     --rarity-titan: #fcce53;
+    --rarity-angel: #d63924;
 
     /* common colors */
     --body-background: #282c34;
     --body-text-color: #DBE0E2;
+    --body-border: #A9AAAA;
     --body-text-color-highlight: #C2CACD;
     --header-footer-background: #20232a;
 

@@ -1,0 +1,185 @@
+/* src/components/ItemCard.css */
+
+.data-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.item-main-block {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+/* --- Item Selector (Rarity) --- */
+.custom-select-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.item-svg.select-image {
+    width: 80%;
+    height: 80%;
+    fill: currentColor;
+}
+
+.custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Make sure this is a dark background */
+    border: 1px solid #555;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* HIGHER Z-INDEX: Ensures it's always on top */
+    min-width: 150px;
+    display: grid; /* Still grid, but adjusted below */
+}
+
+.data-item-data-grid {
+    grid-template-columns: repeat(3, 1fr); /* THREE RARITIES PER ROW */
+    gap: 5px;
+}
+
+.rarity-name {
+    background-color: var(--body-background);
+    text-align: center;
+}
+
+.custom-options .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.8em;
+    min-width: 60px; /* Adjusted min-width for 3 columns */
+}
+
+.option-container {
+    border: 1px solid #555;
+    padding: 2px;
+}
+
+.custom-options .option:hover {
+    background-color: #555;
+}
+
+.custom-options .option .item-svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+    fill: currentColor;
+}
+
+/* --- Level Control (No Input) --- */
+.input-with-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 60px; /* Ensure same height as item square */
+    border: 2px solid; /* Keep border for rarity color */
+    border-left: none; /* Keep it flush with the item square */
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222; /* UNIFORM BACKGROUND COLOR for the whole level control */
+}
+
+.input-with-control .value-control {
+    background-color: #444; /* Background for +/- buttons */
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 1;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-with-control .value-control:hover {
+    background-color: #666;
+}
+
+.level-display {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: #444;
+}
+
+/* --- Seal Container (Below Main Block) --- */
+.seals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center; /* Centre les sceaux */
+    width: 100%;
+}
+
+.seal-item {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.seal-item.selected {
+    background-color:rgb(16, 84, 157);    
+}
+
+.seal-item svg {
+    width: 75%; /* REDUCE SEAL ICON SIZE: Half the width */
+    height: 75%; /* REDUCE SEAL ICON SIZE: Half the height */
+    fill: currentColor; /* Ensure it takes color from CSS */
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+/* --- Rarity Specific Colors (Example) --- */
+/* Ces classes 'color-...' devront correspondre à votre définition de raretés */
+.color-none { border-color: var(--rarity-none); background-color: var(--rarity-none); }
+.color-common { border-color: var(--rarity-common); background-color: var(--rarity-common); }
+.color-uncommon { border-color: var(--rarity-uncommon); background-color: var(--rarity-uncommon); }
+.color-rare { border-color: var(--rarity-rare); background-color: var(--rarity-rare); }
+.color-epic { border-color: var(--rarity-epic); background-color: var(--rarity-epic); }
+.color-legendary { border-color: var(--rarity-legendary); background-color: var(--rarity-legendary); }
+.color-mythic { border-color: var(--rarity-mythic); background-color: var(--rarity-mythic); }
+.color-titan { border-color: var(--rarity-titan); background-color: var(--rarity-titan); }
+.color-angel { border-color: var(--rarity-angel); background-color: var(--rarity-angel); }
+
+.border-color-none { border-color: var(--rarity-none); }
+.border-color-common { border-color: var(--rarity-common); }
+.border-color-uncommon { border-color: var(--rarity-uncommon); }
+.border-color-rare { border-color: var(--rarity-rare); }
+.border-color-epic { border-color: var(--rarity-epic); }
+.border-color-legendary { border-color: var(--rarity-legendary); }
+.border-color-mythic { border-color: var(--rarity-mythic); }
+.border-color-titan { border-color: var(--rarity-titan); }
+.border-color-angel { border-color: var(--rarity-angel); }
