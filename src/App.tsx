@@ -1,5 +1,5 @@
 import { HashRouter as Router } from 'react-router-dom';
-import React, { useEffect } from 'react'; // Importez useEffect
+import { useEffect } from 'react'; // Importez useEffect
 import { useDispatch } from 'react-redux'; // Importez useDispatch
 import './App.css';
 import Navigator from './app/Navigator';
