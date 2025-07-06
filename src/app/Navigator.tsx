@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import Characters from '../pages/Characters';
+import DataManagement from '../pages/DataManagement';
 
 export default function Navigator() {
 	const location = useLocation();
@@ -17,6 +18,7 @@ export default function Navigator() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/characters" element={<Characters />} />
+				<Route path="/data-management" element={<DataManagement />} />
 			</Routes>
 		</main>
 	);

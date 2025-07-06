@@ -12,3 +12,155 @@
     padding-bottom: 5px;
     border-bottom: 2px var(--body-border) solid;
 }
+
+.title-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.delete-entity-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.delete-entity-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+
+.delete-entity-button:active {
+    transform: translateY(0);
+}
+
+.button-primary {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.button-primary:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.button-secondary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* --- STYLES GÉNÉRIQUES POUR LES SECTIONS DE CONTENU (comme les tableaux) --- */
+.content-section {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    background-color: #2e3136;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-section {
+  background-color: #2e3239; /* Fond des sections de contenu */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.content-section h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  color: #abb2bf; /* Titres de section */
+  border-bottom: 1px solid #3e4451; /* Ligne sous les titres de section */
+  padding-bottom: 10px;
+}
+
+/* --- Specific styles for DataManagement page --- */
+
+.data-section {
+  background-color: #3a3f47; /* Fond plus foncé pour les sections export/import */
+  border: 1px solid #4a4f59; /* Bordure foncée */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-section h3 {
+  color: #61dafb; /* Titre des sections export/import en bleu clair */
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #5a5f68; /* Ligne de séparation plus claire sous le titre */
+  padding-bottom: 10px;
+}
+
+.data-textarea {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #5a5f68; /* Bordure foncée */
+  border-radius: 4px;
+  background-color: #282c34; /* Fond très sombre pour le textarea de données */
+  color: #98c379; /* Texte vert clair pour les données (comme une console) */
+  font-family: monospace; /* Pour la lisibilité du code/JSON */
+  font-size: 0.9em;
+  resize: vertical;
+  min-height: 150px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); /* Légère ombre interne */
+}
+
+.data-textarea::placeholder {
+  color: #777; /* Couleur du placeholder */
+}
+
+.data-textarea:focus {
+  border-color: #61dafb; /* Bordure bleue au focus */
+  outline: none;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(97, 218, 251, 0), rgba(97, 218, 251, 0.4), rgba(97, 218, 251, 0)); /* Dégradé de bleu clair */
+  margin: 40px 0;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './WarMachineSelector.css'; // Pour le style du sélecteur
 
 // Importez toutes les images de machines de guerre
@@ -29,15 +30,17 @@ const WarMachineSelector: React.FC<WarMachineSelectorProps> = ({
     onChange,
 }) => {
     const [isOpen, setIsOpen] = useState(false);
-
+    
     const handleToggle = () => setIsOpen(!isOpen);
-
+    
     const handleSelect = (id: string) => {
         onChange(id);
         setIsOpen(false);
     };
-
-    const displayedMachineName = capitalizeFirstLetter(currentWarMachineId === 'none' ? 'Aucune' : currentWarMachineId);
+    
+    
+    const { t } = useTranslation();
+    const displayedMachineName = t(`warmachines.${currentWarMachineId}`);
 
     return (
         <div className="war-machine-selector">
@@ -55,24 +58,18 @@ const WarMachineSelector: React.FC<WarMachineSelectorProps> = ({
                 <div className="options-dropdown">
                     <div className="option-item" onClick={() => handleSelect('none')}>
                         <img src={defaultTankIcon} alt="Aucune" className="machine-image" />
-                        <span>Aucune</span>
+                        <span>{t('warmachines.none')}</span>
                     </div>
                     {warMachineOptions.map(machineId => (
                         <div key={machineId} className="option-item" onClick={() => handleSelect(machineId)}>
                             <img src={getWarMachineImage(machineId)} alt={machineId} className="machine-image" />
-                            <span>{capitalizeFirstLetter(machineId)}</span>
+                            <span>{t(`warmachines.${machineId}`)}</span>
                         </div>
                     ))}
                 </div>
             )}
         </div>
     );
-};
-
-// Fonction utilitaire (peut être importée depuis un fichier commun)
-const capitalizeFirstLetter = (str: string): string => {
-    if (!str) return '';
-    return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
 export default WarMachineSelector;

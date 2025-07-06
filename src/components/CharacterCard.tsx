@@ -18,7 +18,7 @@ const getCharacterImage = (id: string): string => {
         return images[imagePath] as string;
     }
     console.warn(`Image for character ${id}.webp not found at path: ${imagePath}`);
-    return '/path/to/default-image.webp'; // REMPLACEZ ceci
+    return '';
 };
 
 const capitalizeFirstLetter = (str: string): string => {

@@ -3,6 +3,7 @@ import type { HeroItem } from '../types/crudInterfaces';
 import type { Gear, Jewel, Soulstone } from '../types/dataInterfaces';
 import rarities from '../data/rarities.json';
 import SealIcon from '../assets/icons/SealIcon';
+import { useTranslation } from 'react-i18next';
 import './ItemCard.css';
 
 
@@ -33,6 +34,7 @@ interface ItemCardProps {
 }
 
 const ItemCard: React.FC<ItemCardProps> = ({ item, heroItem, itemType, onUpdate, openDropdownItemId, setOpenDropdownItemId }) => {
+    const { t } = useTranslation();
     const currentRarity = rarities.find(r => r.id === heroItem.rarity);
     const currentLevel = heroItem.level;
     const selectedSeals = heroItem.unusedSeals || [];
@@ -200,7 +202,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, heroItem, itemType, onUpdate,
                             key={sealRarity.id}
                             className={`seal-item rarity-${sealRarity.id} ${selectedSeals.includes(sealRarity.id) ? 'selected' : ''}`}
                             onClick={() => toggleSeal(sealRarity.id)}
-                            title={`Sceau de ${capitalizeFirstLetter(sealRarity.id)}`}
+                            title={t(`seals.${sealRarity.id}`)}
                         >
                             <SealIcon />
                         </div>

@@ -1,0 +1,87 @@
+/* src/components/Modal.css */
+
+/* Styles existants pour le modal-overlay et modal-content */
+.confirmation-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirmation-modal-content {
+    background-color: #36393f; /* Un gris plus foncé pour le fond de la modale */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    max-width: 500px; /* Largeur maximale pour la modale */
+    width: 90%; /* S'adapte à la largeur de l'écran */
+    color: #e0e0e0; /* Texte clair pour le contraste */
+    animation: fadeInScale 0.3s ease-out forwards; /* Animation d'apparition */
+}
+
+/* Animation pour l'apparition de la modale */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.confirmation-modal-content h2 {
+    color: #61dafb; /* Couleur de titre cohérente avec votre thème */
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8em;
+    border-bottom: 2px solid #4a4d52; /* Une légère bordure sous le titre */
+    padding-bottom: 15px;
+}
+
+.confirmation-modal-actions {
+    display: flex;
+    justify-content: flex-end; /* Aligner les boutons à droite */
+    gap: 15px; /* Espacement entre les boutons */
+    margin-top: 30px;
+}
+
+/* Styles de base pour les boutons */
+.confirmation-modal .button-primary, .confirmation-modal .button-secondary {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.confirmation-modal .button-primary {
+    background-color: #61dafb;
+    color: #282c34;
+    font-weight: bold;
+}
+
+.confirmation-modal .button-primary:hover {
+    background-color: #4dc2ea;
+    transform: translateY(-2px);
+}
+
+.confirmation-modal .button-secondary {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+.confirmation-modal .button-secondary:hover {
+    background-color: #666;
+    transform: translateY(-2px);
+}

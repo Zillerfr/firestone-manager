@@ -13,6 +13,7 @@ import jewels from '../data/jewels.json'; // Importez les données d'items
 import soulstones from '../data/soulstones.json'; // Importez les données d'items
 import WarMachineSelector from './WarMachineSelector';
 import ItemSection from './ItemSection'; // Importez le nouveau composant
+import { useTranslation } from 'react-i18next';
 import './HeroDetailsModal.css';
 
 const characterImages = import.meta.glob('../assets/characters/*.webp', { eager: true, as: 'url' });
@@ -35,6 +36,7 @@ interface HeroDetailsModalProps {
 }
 
 const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, onClose }) => {
+    const { t } = useTranslation();
     const dispatch: AppDispatch = useDispatch();
     const { selectedHero, status, error } = useSelector((state: RootState) => state.heroes);
 
@@ -117,7 +119,7 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
         return ReactDOM.createPortal(
             <div className="modal-overlay">
                 <div className="modal-content">
-                    <p>Chargement des détails du héros...</p>
+                    <p>{t('characters.modal.loading')}</p>
                 </div>
             </div>,
             document.body
@@ -128,8 +130,8 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
         return ReactDOM.createPortal(
             <div className="modal-overlay">
                 <div className="modal-content">
-                    <p>Erreur lors du chargement des détails du héros: {error}</p>
-                    <button onClick={onClose}>Fermer</button>
+                    <p>{t('characters.modal.error')}{error}</p>
+                    <button onClick={onClose}>{t('characters.modal.close')}</button>
                 </div>
             </div>,
             document.body
@@ -160,7 +162,7 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
                         </div>
                         <div className="top-controls">
                             <div className="form-group">
-                                <label htmlFor="unlocked-checkbox">Déverrouillé:</label>
+                                <label htmlFor="unlocked-checkbox">{t('characters.hero_details.unlocked')}</label>
                                 <input
                                     id="unlocked-checkbox"
                                     type="checkbox"
@@ -170,7 +172,7 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
                                 />
                             </div>
                             <div className="form-group">
-                                <label>Machine de Guerre:</label>
+                                <label>{t('characters.hero_details.warmachine')}</label>
                                 <WarMachineSelector
                                     currentWarMachineId={editedHero.warMachine}
                                     warMachineOptions={warMachineList}
@@ -185,7 +187,7 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
                 <div className="modal-body">
                     {gearType && (
                         <ItemSection
-                            title="Équipement"
+                            title={t('items.gear')}
                             itemType="gear"
                             heroItems={editedHero.gear}
                             allItems={gears}
@@ -197,7 +199,7 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
                     )}
                     {jewelType && (
                         <ItemSection
-                            title="Bijoux"
+                            title={t('items.jewel')}
                             itemType="jewel"
                             heroItems={editedHero.jewel}
                             allItems={jewels}
@@ -209,7 +211,7 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
                     )}
                     {soulstoneType && (
                         <ItemSection
-                            title="Pierres d'âme"
+                            title={t('items.soulstone')}
                             itemType="soulstone"
                             heroItems={editedHero.soulstone}
                             allItems={soulstones}
@@ -222,8 +224,8 @@ const HeroDetailsModal: React.FC<HeroDetailsModalProps> = ({ heroCharacterId, on
                 </div>
 
                 <div className="modal-footer">
-                    <button onClick={handleSave} className="save-button">Enregistrer</button>
-                    <button onClick={handleCancel} className="cancel-button">Annuler</button>
+                    <button onClick={handleSave} className="save-button">{t('characters.hero_details.save')}</button>
+                    <button onClick={handleCancel} className="cancel-button">{t('characters.hero_details.cancel')}</button>
                 </div>
             </div>
         </div>,
