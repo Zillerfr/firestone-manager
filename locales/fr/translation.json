@@ -4,9 +4,21 @@
   },
   "characters":{
     "title": "Gestion des personnages",
+    "no_character": "Aucun personnage dans cette catégorie.",
     "title_heroes": "Héros",
     "title_mercenaries": "Mercenaires",
-    "title_gods": "Dieux"
+    "title_gods": "Dieux",
+    "hero_details": {
+      "unlocked": "Déverrouillé : ",
+      "warmachine": "Machine de Guerre : ",
+      "save": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "modal": {
+      "loading": "Chargement des détails du héros...",
+      "error": "Erreur lors du chargement des détails du héros : ",
+      "close": "Fermer"
+    }
   },
   "header": {
     "home_link": "Accueil",
@@ -35,8 +47,51 @@
     "judgement": "Jugement",
     "sentinel": "Sentinelle",
     "talos": "Talos",
-    "thunderclap": "Coup de tonnerre"
+    "thunderclap": "Coup de tonnerre",
+    "none": "Aucune"
   },
+  "confirmationModal": {
+    "title": "Confirmation Requise",
+    "button_confirm": "Confirmer",
+    "button_cancel": "Annuler"
+  },  
+  "data_management": {
+    "title": "Gestion des Données (Import / Export)",
+    "export": {
+      "title": "Exporter les données",
+      "text": "Cliquez sur \"Exporter\" pour générer un JSON Base64 de toutes vos données.",
+      "text2": "Données exportées (Base64)",
+      "button": "Exporter les données",
+      "success": "Données exportées avec succès ! Copiez le contenu ci-dessous.",
+      "button2": "Copier dans le presse-papiers",
+      "error": "Erreur lors de l'export des données:",
+      "error_message": "Erreur lors de l'export des données. Veuillez réessayer.",
+      "copy_success": "Données copiées dans le presse-papiers !",
+      "copy_error": "Échec de la copie:",
+      "copy_error_message": "Échec de la copie des données."
+    },
+    "import": {
+      "title": "Importer les données",
+      "text": "Collez ici les données JSON encodées en Base64 pour les importer. Cela **remplacera toutes les données existantes**.",
+      "text2": "Coller les données à importer (Base64)",
+      "placeholder": "Collez ici votre chaîne de données Base64...",
+      "button": "Importer les données",
+      "popin_message": "Êtes-vous sûr de vouloir importer ces données ? Cela remplacera TOUTES les données existantes dans l'application. Cette action est irréversible.",
+      "error": "Veuillez coller les données à importer.",
+      "error_message": "Format de données importé invalide.",
+      "success": "Données importées avec succès ! La page va se recharger.",
+      "error2": "Erreur lors de l'import des données:",
+      "error2_message": "Erreur lors de l'import des données :",
+      "error2_message2": "Format invalide"
+    },
+    "reset": {
+      "title": "Supprimer toutes les données",
+      "success": "Toutes les données ont été supprimées avec succès ! La page va se recharger.",
+      "error": "Erreur lors de la suppression des données:",
+      "error_message": "Erreur lors de la suppression complète des données.",
+      "popin_message": "Êtes-vous sûr de vouloir supprimer TOUTES les données de l'application ? Cette action est irréversible."
+    }
+  },  
   "rarities": {
     "none": "Aucun",
     "common": "Ordinaire",
@@ -47,6 +102,12 @@
     "mythic": "Mythique",
     "titan": "Titan",
     "angel": "Ange"
+  },
+  "seals": {
+    "legendary": "Sceau légendaire",
+    "mythic": "Sceau mythique",
+    "titan": "Sceau titan",
+    "angel": "Sceau ange"
   },
   "gear": {
     "weapon": "Arme",

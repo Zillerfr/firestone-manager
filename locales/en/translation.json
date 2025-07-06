@@ -4,9 +4,16 @@
   },
   "characters":{
     "title": "Characters management",
+    "no_character": "No character in this category.",
     "title_heroes": "Heroes",
     "title_mercenaries": "Mercenaries",
-    "title_gods": "Gods"
+    "title_gods": "Gods",
+    "hero_details": {
+      "unlocked": "Unlocked : ",
+      "warmachine": "War Machine : ",
+      "save": "Save",
+      "cancel": "Cancel"
+    }
   },  
   "header": {
     "home_link": "Home",
@@ -35,8 +42,51 @@
     "judgement": "Judgement",
     "sentinel": "Sentinel",
     "talos": "Talos",
-    "thunderclap": "Thunderclap"
+    "thunderclap": "Thunderclap",
+    "none": "None"
   },
+  "confirmationModal": {
+    "title": "Confirmation Required",
+    "button_confirm": "Confirm",
+    "button_cancel": "Cancel"
+  },  
+  "data_management": {
+    "title": "Data Management (Import / Export)",
+    "export": {
+      "title": "Export Data",
+      "text": "Click \"Export\" to generate a Base64 JSON of all your data.",
+      "text2": "Exported Data (Base64)",
+      "button": "Export Data",
+      "success": "Data successfully exported! Copy the content below.",
+      "button2": "Copy to Clipboard",
+      "error": "Error exporting data:",
+      "error_message": "Error exporting data. Please try again.",
+      "copy_success": "Data copied to clipboard!",
+      "copy_error": "Failed to copy:",
+      "copy_error_message": "Failed to copy data."
+    },
+    "import": {
+      "title": "Import Data",
+      "text": "Paste your Base64 encoded JSON data here to import it. This will **replace all existing data**.",
+      "text2": "Paste Data to Import (Base64)",
+      "placeholder": "Paste your Base64 data string here...",
+      "button": "Import Data",
+      "popin_message": "Are you sure you want to import this data? This will REPLACE ALL existing data in the application. This action is irreversible.",
+      "error": "Please paste data to import.",
+      "error_message": "Invalid imported data format.",
+      "success": "Data successfully imported! The page will reload.",
+      "error2": "Error importing data:",
+      "error2_message": "Error importing data:",
+      "error2_message2": "Invalid format"
+    },
+    "reset": {
+      "title": "Delete All Data",
+      "success": "All data successfully deleted! The page will reload.",
+      "error": "Error deleting data:",
+      "error_message": "Error completely deleting data.",
+      "popin_message": "Are you sure you want to delete ALL data from the application? This action is irreversible."
+    }
+  },  
   "rarities": {
     "none": "None",
     "common": "Common",
@@ -47,6 +97,12 @@
     "mythic": "Mythic",
     "titan": "Titan",
     "angel": "Angel"
+  },
+  "seals": {
+    "legendary": "Legendary seal",
+    "mythic": "Mythic seal",
+    "titan": "Titan seal",
+    "angel": "Angel seal"
   },
   "gear": {
     "weapon": "Weapon",
