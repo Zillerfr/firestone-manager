@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import ConfirmationModal from '../components/ConfirmationModal'; // Assurez-vous que ce composant existe
 import './Pages.css'; // Styles généraux des pages
 import { useTranslation } from 'react-i18next';
+import { convertOldDataToNewHeroes } from '../utils/oldFormatConverter';
+import type { Hero } from '../types/crudInterfaces';
 
 const DataManagement: React.FC = () => {
 	const { t } = useTranslation();
@@ -117,6 +119,54 @@ const DataManagement: React.FC = () => {
 		}
 	};
 
+// --- New: Handle Old Format Import Logic ---
+    const handleOldFormatImport = () => {
+        clearMessages();
+        if (!importData) {
+            setError(t('data_management.import.error_no_data')); // You might want a specific translation key for this
+            return;
+        }
+
+        try {
+			// Décoder la chaîne Base64
+			const decodedJsonString = atob(importData); // `atob` pour décoder du base64
+
+            // Parse the old JSON string directly (it's not Base64 encoded)
+			console.log(decodedJsonString);
+            const oldDataObject = JSON.parse(decodedJsonString);
+
+            // On vérifie si au moins une clé ressemble au pattern de l'ancien format
+            const looksLikeOldFormat = Object.keys(oldDataObject).some(key => 
+                key.match(/^[a-zA-Z0-9]+-(gears|jewels|soulstones)-[a-zA-Z0-9]+-(rarity|level)$/) ||
+                key.match(/^[a-zA-Z0-9]+-WM$/)
+            );
+            
+			if (!looksLikeOldFormat) {
+                throw new Error(t('data_management.import.error2_message2')); // Nouvelle clé de traduction
+            }
+
+            // Use the converter function
+            const newHeroes: Hero[] = convertOldDataToNewHeroes(oldDataObject);
+
+            // Now, convert the new heroes array back to JSON string for localStorage
+            const newHeroesJsonString = JSON.stringify(newHeroes);
+
+            // Store in localStorage
+            localStorage.setItem(LOCAL_STORAGE_KEYS.heroes, newHeroesJsonString);
+
+            setSuccessMessage(t('data_management.import.success')); // New translation key
+            setTimeout(() => window.location.href = '/firestone-manager/', 1500);
+
+        } catch (e: any) {
+            console.error("Error converting or importing old format data:", e);
+            setError(
+                `${t('data_management.import.error2')} ${
+                    e.message || t('data_management.import.error2_message2')
+                }.`
+            );
+        }
+    };
+
 	// --- Clear All Data Logic ---
 	const handleClearAllDataConfirmation = () => {
 		clearMessages();
@@ -208,14 +258,22 @@ const DataManagement: React.FC = () => {
 							className="data-textarea"
 							placeholder={t('data_management.import.placeholder')}
 						></textarea>
-						<button
-							onClick={handleImportConfirmation}
-							className="button-primary"
-							style={{ marginTop: '10px' }}
-							disabled={!importData}
-						>
-							{t('data_management.import.button')}
-						</button>
+						<div className='data-import-buttons'>
+							<button
+								onClick={handleImportConfirmation}
+								className="button-primary"
+								disabled={!importData}
+							>
+								{t('data_management.import.button')}
+							</button>
+							<button
+								onClick={handleOldFormatImport} // <--- NEW BUTTON FOR OLD FORMAT
+								className="button-secondary" // Use a secondary style for distinction
+								disabled={!importData}
+							>
+								{t('data_management.import.button_old_format')}
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
