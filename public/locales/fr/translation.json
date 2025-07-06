@@ -99,7 +99,8 @@
       "error2": "Erreur lors de l'import des données:",
       "error2_message": "Erreur lors de l'import des données :",
       "error2_message2": "Format invalide",
-      "button_old_format": "Import depuis ancien outil"
+      "button_old_format": "Import depuis ancien outil",
+      "old_tool": "Vous pouvez également importer vos données provenant de l'outil précédent : https://zillerfr.github.io/fsidlecalc/"
     },
     "reset": {
       "title": "Supprimer toutes les données",

@@ -240,9 +240,8 @@ const DataManagement: React.FC = () => {
 				{/* Import Section */}
 				<div className="data-section">
 					<h3>{t('data_management.import.title')}</h3>
-					<p>
-						{t('data_management.import.text')}
-					</p>
+					<p>{t('data_management.import.text')}</p>
+					<p>{t('data_management.import.old_tool')}</p>
 					<div className="form-group">
 						<label htmlFor="import-data-textarea">
 							{t('data_management.import.text2')} :
