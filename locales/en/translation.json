@@ -98,7 +98,8 @@
       "success": "Data successfully imported! The page will reload.",
       "error2": "Error importing data:",
       "error2_message": "Error importing data:",
-      "error2_message2": "Invalid format"
+      "error2_message2": "Invalid format",
+      "button_old_format": "Import from previous tool"
     },
     "reset": {
       "title": "Delete All Data",
