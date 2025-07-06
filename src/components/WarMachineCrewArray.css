@@ -1,0 +1,14 @@
+.war-machine-crew-array {
+    padding: 20px;
+    background-color: #222;
+    color: #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.war-machine-crew-array h2 {
+    color: #f0c040;
+    text-align: center;
+    margin-bottom: 20px;
+}

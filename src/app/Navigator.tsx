@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import Characters from '../pages/Characters';
 import DataManagement from '../pages/DataManagement';
+import WarMachineCrew from '../pages/WarMachineCrew';
 
 export default function Navigator() {
 	const location = useLocation();
@@ -11,14 +12,13 @@ export default function Navigator() {
 			? 'main-content-centered'
 			: 'main-content-top';
 
-	 console.log('Current Path:', location.pathname);
-
 	return (
 		<main className={mainContentClass}>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/characters" element={<Characters />} />
 				<Route path="/data-management" element={<DataManagement />} />
+				<Route path="/wm-crew" element={<WarMachineCrew />} />
 			</Routes>
 		</main>
 	);

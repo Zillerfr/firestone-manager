@@ -20,9 +20,25 @@
       "close": "Close"
     }
   },  
+  "wmcrew": {
+    "title": "War Machines Crew",
+    "no_character": "No unlocked hero to display.",
+    "tab_char":"Character",
+    "tab_spec":"Specialization",
+    "tab_WM":"War Machine",
+    "tab_damage":"Damage",
+    "tab_damage_potential":"Potential Damage",
+    "tab_health":"Health",
+    "tab_health_potential":"Potential Health",
+    "tab_resistance":"Resistance",
+    "tab_resistance_potential":"Potential Resistance",
+    "tab_health_resistane":"Health/Resistance",
+    "tab_health_resistane_potential":"Potential Health/Resistance"
+  },  
   "header": {
     "home_link": "Home",
-    "characters_link": "Characters"
+    "characters_link": "Characters",
+    "wm_crew": "WM Crew"
   },
   "items": {
     "gear": "Gear",
@@ -30,8 +46,8 @@
     "soulstone": "Soulstones"
   },
   "speciality": {
-    "damage": "Destructeur",
-    "healer": "Guérisseur",
+    "damage": "Damage",
+    "healer": "Healer",
     "tank": "Tank"
   },
   "warmachines": {

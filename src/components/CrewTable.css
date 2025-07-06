@@ -1,0 +1,49 @@
+.crew-table-container {
+    overflow-x: auto; /* Pour les petits écrans */
+    max-width: 100%;
+}
+
+.crew-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9em;
+    min-width: 800px; /* Assure que le tableau ne soit pas trop compressé */
+}
+
+.crew-table th, .crew-table td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    vertical-align: middle;
+}
+
+.crew-table thead th {
+    background-color: #333;
+    color: #f0c040;
+    cursor: pointer;
+    white-space: wrap; /* Empêche les titres de colonnes de se casser */
+}
+
+.crew-table thead th:hover {
+    background-color: #444;
+}
+
+.crew-table thead th.sorted {
+    background-color: #555;
+}
+
+.crew-table tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.crew-table tbody tr:hover {
+    background-color: #3a3a3a;
+}
+
+.no-heroes-message {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-style: italic;
+}

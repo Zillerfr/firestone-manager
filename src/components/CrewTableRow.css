@@ -1,0 +1,21 @@
+.war-machine-crew-array .character-cell, .war-machine-crew-array .war-machine-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Espace entre l'image et le texte */
+    white-space: nowrap; /* Empêche le nom de se casser */
+}
+
+.war-machine-crew-array .character-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #f0c040;
+}
+
+.war-machine-crew-array .war-machine-image {
+    width: 28px;
+    height: 28px;
+    object-fit: contain; /* Conserve les proportions de l'image de la machine */
+}

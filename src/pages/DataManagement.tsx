@@ -96,8 +96,6 @@ const DataManagement: React.FC = () => {
 				importedDataObject.heroes !== null &&
 				importedDataObject.heroes !== undefined
 			) {
-				console.log("TEST import dans ", LOCAL_STORAGE_KEYS.heroes);
-				console.log("TEST import de ", importedDataObject.heroes);
 				localStorage.setItem(
 					LOCAL_STORAGE_KEYS.heroes,
 					importedDataObject.heroes

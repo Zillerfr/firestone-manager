@@ -20,18 +20,34 @@
       "close": "Fermer"
     }
   },
+  "wmcrew": {
+    "title": "Équipage des Machines de Guerre",
+    "no_character": "Aucun héros débloqué à afficher.",
+    "tab_char":"Personnage",
+    "tab_spec":"Spécialisation",
+    "tab_WM":"Machine de Guerre",
+    "tab_damage":"Dégâts",
+    "tab_damage_potential":"Dégâts Potentiels",
+    "tab_health":"Santé",
+    "tab_health_potential":"Santé Potentielle",
+    "tab_resistance":"Résistance",
+    "tab_resistance_potential":"Résistance Potentielle",
+    "tab_health_resistane":"Santé/Résistance",
+    "tab_health_resistane_potential":"Santé/Résistance Potentielles"
+  },
   "header": {
     "home_link": "Accueil",
-    "characters_link": "Personnages"
+    "characters_link": "Personnages",
+    "wm_crew": "Equipage MdG"
   },
   "items": {
     "gear": "Équipement",
     "jewel": "Bijoux",
     "soulstone": "Pierres d'âme"
-  },
+  },  
   "speciality": {
-    "damage": "Damage",
-    "healer": "Healer",
+    "damage": "Destructeur",
+    "healer": "Guérisseur",
     "tank": "Tank"
   },
   "warmachines": {
