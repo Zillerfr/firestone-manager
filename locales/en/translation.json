@@ -13,6 +13,11 @@
       "warmachine": "War Machine : ",
       "save": "Save",
       "cancel": "Cancel"
+    },
+    "modal": {
+      "loading": "Hero details loading...",
+      "error": "Error while loading hero details : ",
+      "close": "Close"
     }
   },  
   "header": {
