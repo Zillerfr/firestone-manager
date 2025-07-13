@@ -163,6 +163,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, heroItem, itemType, onUpdate,
                         setOpenDropdownItemId(showRarityDropdown ? null : heroItem.id);
                     }}
                     ref={selectContainerRef}
+                    title={t(`${itemType}.${item.id}`)}
                 >
                     <img className={`item-svg select-image color-${currentRarity ? currentRarity.id : 'none'}`} src={itemImageUrl} alt={item.id} />
 
