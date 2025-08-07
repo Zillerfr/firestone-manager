@@ -1,0 +1,14 @@
+Publication :
+
+git add .
+git commit -m "message de commit"
+
+git push -u origin main
+
+Déploiement sur gitpages :
+
+npm run deploy
+
+Exécution :
+
+npm run dev

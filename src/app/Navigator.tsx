@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Characters from '../pages/Characters';
 import DataManagement from '../pages/DataManagement';
 import WarMachineCrew from '../pages/WarMachineCrew';
+import CharactersList from '../pages/CharactersList';
 
 export default function Navigator() {
 	const location = useLocation();
@@ -19,6 +20,7 @@ export default function Navigator() {
 				<Route path="/characters" element={<Characters />} />
 				<Route path="/data-management" element={<DataManagement />} />
 				<Route path="/wm-crew" element={<WarMachineCrew />} />
+				<Route path="/characters-list" element={<CharactersList />} />
 			</Routes>
 		</main>
 	);

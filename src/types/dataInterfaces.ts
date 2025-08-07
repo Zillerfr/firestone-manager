@@ -42,6 +42,7 @@ export interface Upgrades {
 export interface ItemTypes {
     id: string;
     nbTier : number;
+    nbItem: number;
 }
 
 export interface Speciality {

@@ -18,7 +18,16 @@
       "loading": "Chargement des détails du héros...",
       "error": "Erreur lors du chargement des détails du héros : ",
       "close": "Fermer"
-    }
+    },
+    "list_view": "Vue Liste",
+    "character": "Personnage",
+    "name": "Nom",
+    "warmachine": "Machine de guerre",
+    "spec": "Spécialisation"
+  },
+  "characters_list": {
+    "title": "Liste des personnages",
+    "detailed_view": "Vue détaillée"
   },
   "wmcrew": {
     "title": "Équipage des Machines de Guerre",

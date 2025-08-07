@@ -18,7 +18,16 @@
       "loading": "Hero details loading...",
       "error": "Error while loading hero details : ",
       "close": "Close"
-    }
+    },
+    "list_view": "List View",
+    "character": "Character",
+    "name": "Name",
+    "warmachine": "War machine",
+    "spec": "Specialization"
+  },
+  "characters_list": {
+    "title": "Characters List",
+    "detailed_view": "Detailed View"
   },  
   "wmcrew": {
     "title": "War Machines Crew",

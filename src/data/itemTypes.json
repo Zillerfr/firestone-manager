@@ -1,14 +1,17 @@
 [
     {
         "id": "gear",
-        "nbTier": 3
+        "nbTier": 3,
+        "nbItem": 8
     }, 
     {
         "id": "jewel",
-        "nbTier": 2
+        "nbTier": 2,
+        "nbItem": 6
     },
     {
         "id": "soulstone",
-        "nbTier": 2
+        "nbTier": 2,
+        "nbItem": 6
     }
 ]
