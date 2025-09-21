@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux'; // Importez useSelector
 import type { Character } from '../types/dataInterfaces';
-import type { Hero } from '../types/crudInterfaces'; // Importez l'interface Hero
 import CharacterCard from './CharacterCard';
-import { useTranslation } from 'react-i18next'; // Ajout de l'import pour useTranslation
+import { useTranslation } from 'react-i18next';
 import './CharacterSection.css';
+import type { RootState } from '../store';
 
 interface CharacterSectionProps {
     title: string;
@@ -14,7 +14,7 @@ interface CharacterSectionProps {
 const CharacterSection: React.FC<CharacterSectionProps> = ({ title, characters }) => {
     const { t } = useTranslation();
     // Sélectionnez la liste des héros depuis le store Redux
-    const heroes = useSelector((state: any) => state.heroes.list as Hero[]); // Assurez-vous que 'state.heroes.list' est le chemin correct vers votre liste de héros
+    const heroes = useSelector((state: RootState) => state.heroes.list); // Assurez-vous que 'state.heroes.list' est le chemin correct vers votre liste de héros
 
     if (!characters || characters.length === 0) {
         return (

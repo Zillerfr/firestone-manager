@@ -19,7 +19,8 @@ const DataManagement: React.FC = () => {
 	const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
 	const LOCAL_STORAGE_KEYS = {
-		heroes: 'firestone_manager.heroes'
+		heroes: 'firestone_manager.heroes',
+		warmachines: 'firestone_manager.warmachines'
 	};
 
 	const clearMessages = () => {
@@ -32,7 +33,8 @@ const DataManagement: React.FC = () => {
 		clearMessages();
 		try {
 			const dataToExport = {
-				heroes: localStorage.getItem(LOCAL_STORAGE_KEYS.heroes)
+				heroes: localStorage.getItem(LOCAL_STORAGE_KEYS.heroes),
+				warmachines: localStorage.getItem(LOCAL_STORAGE_KEYS.warmachines)
 			};
 
 			// Convertir l'objet en chaîne JSON
@@ -106,14 +108,26 @@ const DataManagement: React.FC = () => {
 				localStorage.removeItem(LOCAL_STORAGE_KEYS.heroes);
 			}
 
+			if (
+				importedDataObject.warmachines !== null &&
+				importedDataObject.warmachines !== undefined
+			) {
+				localStorage.setItem(
+					LOCAL_STORAGE_KEYS.warmachines,
+					importedDataObject.warmachines
+				);
+			} else {
+				localStorage.removeItem(LOCAL_STORAGE_KEYS.warmachines);
+			}
+
 			setSuccessMessage(t('data_management.import.success'));
 			// Recharger la page pour que les autres composants de l'application voient les nouvelles données
 			setTimeout(() => window.location.href = '/firestone-manager/', 1500);
-		} catch (e: any) {
+		} catch (e: unknown) {
 			console.error(t('data_management.import.error2'), e);
 			setError(
 				`${t('data_management.import.error2_message')} ${
-					e.message || t('data_management.import.error2_message2')
+					e instanceof Error ? e.message : t('data_management.import.error2_message2')
 				}.`
 			);
 		}
@@ -154,14 +168,17 @@ const DataManagement: React.FC = () => {
             // Store in localStorage
             localStorage.setItem(LOCAL_STORAGE_KEYS.heroes, newHeroesJsonString);
 
+            // For old format, war machines are not explicitly saved, so we clear them
+            localStorage.removeItem(LOCAL_STORAGE_KEYS.warmachines);
+
             setSuccessMessage(t('data_management.import.success')); // New translation key
             setTimeout(() => window.location.href = '/firestone-manager/', 1500);
 
-        } catch (e: any) {
+        } catch (e: unknown) {
             console.error("Error converting or importing old format data:", e);
             setError(
                 `${t('data_management.import.error2')} ${
-                    e.message || t('data_management.import.error2_message2')
+                    e instanceof Error ? e.message : t('data_management.import.error2_message2')
                 }.`
             );
         }
@@ -177,6 +194,7 @@ const DataManagement: React.FC = () => {
 		clearMessages();
 		try {
 			localStorage.removeItem(LOCAL_STORAGE_KEYS.heroes);
+			localStorage.removeItem(LOCAL_STORAGE_KEYS.warmachines); // Clear war machines data
 			setSuccessMessage(t('data_management.reset.success'));
 			setIsClearDataModalOpen(false);
 			// Recharger la page pour refléter la suppression complète des données

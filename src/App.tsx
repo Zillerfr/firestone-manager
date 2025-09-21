@@ -6,15 +6,16 @@ import Navigator from './app/Navigator';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { fetchHeroes } from './store/heroesSlice';
+import type { AppDispatch } from './store';
 
 
 function App() {
-    const dispatch = useDispatch();
+    const dispatch: AppDispatch = useDispatch();
 
     // Utilisez useEffect pour déclencher le chargement une seule fois au montage du composant
     useEffect(() => {
         // Dispatch l'action asynchrone pour charger les héros
-        dispatch(fetchHeroes() as any); // Le 'as any' est souvent nécessaire pour les thunks avec TypeScript
+        dispatch(fetchHeroes());
     }, [dispatch]); // Le tableau de dépendances vide [] garantit que cela ne s'exécute qu'une fois au montage.
                     // Si vous avez un linter ESLint, il pourrait suggérer d'ajouter 'dispatch', ce qui est correct.
 

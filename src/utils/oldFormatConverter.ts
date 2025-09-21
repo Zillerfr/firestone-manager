@@ -14,7 +14,7 @@ const SOULSTONE_ITEM_TYPES = ["focus", "stamina", "courage", "wisdom", "faith", 
  * @param oldData The JSON object representing the old data format.
  * @returns An array of Hero objects in the new format.
  */
-export const convertOldDataToNewHeroes = (oldData: Record<string, any>): Hero[] => {
+export const convertOldDataToNewHeroes = (oldData: Record<string, string | number>): Hero[] => {
     const newHeroesMap = new Map<string, Hero>();
 
     // Step 1: Populate the map with initial hero data, including items

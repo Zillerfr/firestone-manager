@@ -2,14 +2,14 @@ import React from 'react';
 import CrewTableHeader from './CrewTableHeader';
 import CrewTableRow from './CrewTableRow';
 import './CrewTable.css'; // Créez ce fichier CSS si nécessaire
-import type { SortKey } from './WarMachineCrewArray'; // <--- ADD THIS IMPORT
+import type { SortKey, CombinedHeroData } from './WarMachineCrewArray';
 import { useTranslation } from 'react-i18next';
 
 interface CrewTableProps {
-    heroes: any[]; // CombinedHeroData[] from WarMachineCrewArray
+    heroes: CombinedHeroData[];
     sortBy: string;
     sortOrder: 'asc' | 'desc';
-    onSort: (key: SortKey) => void; // <--- CHANGE THIS LINE
+    onSort: (key: SortKey) => void;
     getCharacterImage: (id: string) => string;
     getMachineImage: (id: string) => string;
     capitalizeFirstLetter: (str: string) => string;

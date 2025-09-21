@@ -41,7 +41,7 @@ class HeroService {
      * @returns Une promesse résolue avec le Héro mis à jour.
      */
     async saveHero(updatedHero: Hero): Promise<Hero> {
-        let heroes = await this.getAllHeroes();
+        const heroes = await this.getAllHeroes();
         const index = heroes.findIndex((hero) => hero.id === updatedHero.id);
 
         if (index !== -1) {

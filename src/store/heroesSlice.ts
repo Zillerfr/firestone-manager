@@ -91,8 +91,8 @@ export const fetchHeroes = createAsyncThunk<Hero[], void, { rejectValue: string 
             // Optionnel: vous pourriez aussi "réparer" tous les héros ici si vous voulez que la liste principale soit aussi complète.
             // return heroes.map(ensureFullHeroItems);
             return heroes;
-        } catch (error: any) {
-            return rejectWithValue(error.message);
+        } catch (error: unknown) {
+            return rejectWithValue((error as Error).message);
         }
     }
 );
@@ -108,8 +108,8 @@ export const fetchHeroById = createAsyncThunk<Hero, string, { rejectValue: strin
             }
             // Si le héros est trouvé, assurez-vous que ses listes d'objets sont complètes
             return ensureFullHeroItems(hero); // <--- NOUVEAU : Complète les listes ici
-        } catch (error: any) {
-            return rejectWithValue(error.message);
+        } catch (error: unknown) {
+            return rejectWithValue((error as Error).message);
         }
     }
 );
@@ -120,8 +120,8 @@ export const saveHero = createAsyncThunk<Hero, Hero, { rejectValue: string }>(
         try {
             const savedHero = await heroService.saveHero(heroData);
             return savedHero;
-        } catch (error: any) {
-            return rejectWithValue(error.message);
+        } catch (error: unknown) {
+            return rejectWithValue((error as Error).message);
         }
     }
 );

@@ -16,9 +16,13 @@ export default function Header() {
 					<li>
 						<Link to="/characters">{t('header.characters_link')}</Link>
 					</li>
+					<li>
+						<Link to="/warmachines">{t('header.warmachines_link')}</Link>
+					</li>
 					<li><Link to="/wm-crew">{t('header.wm_crew')}</Link></li>
 				</ul>
 			</nav>
 		</header>
 	);
 }
+

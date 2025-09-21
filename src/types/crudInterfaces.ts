@@ -13,3 +13,10 @@ export interface HeroItem {
     level: number,
     unusedSeals: string[]
 }
+
+export interface WarMachine {
+    id: string,
+    level: number,
+    experience: number,
+    targetLevel: number
+}

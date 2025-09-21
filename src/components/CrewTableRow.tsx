@@ -1,23 +1,10 @@
 import React from 'react';
 import './CrewTableRow.css'; // Créez ce fichier CSS si nécessaire
 import { useTranslation } from 'react-i18next';
+import type { CombinedHeroData } from './WarMachineCrewArray';
 
 interface CrewTableRowProps {
-    heroData: {
-        hero: any; // Hero
-        characterInfo: any; // Character
-        warMachineInfo: any | null; // WarMachine | null
-        characterName: string;
-        spec: string;
-        health: number;
-        potentialHealth: number;
-        dmg: number;
-        potentialDmg: number;
-        resist: number;
-        potentialResist: number;
-        healthResist: number;
-        potentialHealthResist: number;        
-    };
+    heroData: CombinedHeroData;
     getCharacterImage: (id: string) => string;
     getMachineImage: (id: string) => string;
     capitalizeFirstLetter: (str: string) => string;
