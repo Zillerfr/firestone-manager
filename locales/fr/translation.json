@@ -15,7 +15,7 @@
       "cancel": "Annuler"
     },
     "modal": {
-      "loading": "Chargement des détails du héros...",
+      "loading": "Chargement des détails du héros…",
       "error": "Erreur lors du chargement des détails du héros : ",
       "close": "Fermer"
     },
@@ -27,6 +27,10 @@
   },
   "characters_list": {
     "title": "Liste des personnages",
+    "detailed_view": "Vue détaillée"
+  },
+  "war_machines_list": {
+    "title": "Liste des Machines de Guerre",
     "detailed_view": "Vue détaillée"
   },
   "wmcrew": {
@@ -47,6 +51,7 @@
   "header": {
     "home_link": "Accueil",
     "characters_link": "Personnages",
+    "warmachines_link": "Machines de Guerre",
     "wm_crew": "Equipage MdG"
   },
   "items": {
@@ -60,6 +65,29 @@
     "tank": "Tank"
   },
   "warmachines": {
+    "title": "Machines de Guerre",
+    "war_machine": "Machine de Guerre",
+    "image": "Image",
+    "level": "Niveau",
+    "experience": "Expérience",
+    "target_level": "Niveau Cible",
+    "total_experience": "Totale",
+    "target_experience": "Cible",
+    "experience_needed": "Expérience Nécessaire",
+    "upgrades_needed": "Améliorations Nécessaires",
+    "tokens_needed": "Jetons Nécessaires",
+    "screws_needed": "Vis Nécessaires",
+    "cogs_needed": "Rouages Nécessaires",
+    "metal_needed": "Métal Nécessaire",
+    "data_columns_header": "Données",
+    "experience_columns_header": "Expérience",
+    "needed_columns_header": "Nécessaire",
+    "experience_needed_short": "Expérience",
+    "upgrades_needed_short": "Améliorations",
+    "tokens_needed_short": "Jetons",
+    "screws_needed_short": "Vis",
+    "cogs_needed_short": "Rouages",
+    "metal_needed_short": "Métal",
     "aegis": "Egide",
     "cloudfist": "Poing céleste",
     "curator": "Conservateur",

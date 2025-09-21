@@ -29,6 +29,10 @@
     "title": "Characters List",
     "detailed_view": "Detailed View"
   },  
+  "war_machines_list": {
+    "title": "War Machines List",
+    "detailed_view": "Detailed View"
+  },
   "wmcrew": {
     "title": "War Machines Crew",
     "no_character": "No unlocked hero to display.",
@@ -47,6 +51,7 @@
   "header": {
     "home_link": "Home",
     "characters_link": "Characters",
+    "warmachines_link": "War Machines",
     "wm_crew": "WM Crew"
   },
   "items": {
@@ -60,6 +65,29 @@
     "tank": "Tank"
   },
   "warmachines": {
+    "title": "War Machines",
+    "war_machine": "War Machine",
+    "image": "Image",
+    "level": "Level",
+    "experience": "Experience",
+    "target_level": "Target Level",
+    "total_experience": "Total",
+    "target_experience": "Target",
+    "experience_needed": "Experience Needed",
+    "upgrades_needed": "Upgrades Needed",
+    "tokens_needed": "Tokens Needed",
+    "screws_needed": "Screws Needed",
+    "cogs_needed": "Cogs Needed",
+    "metal_needed": "Metal Needed",
+    "data_columns_header": "Data",
+    "experience_columns_header": "Experience",
+    "needed_columns_header": "Needed",
+    "experience_needed_short": "Experience",
+    "upgrades_needed_short": "Upgrades",
+    "tokens_needed_short": "Tokens",
+    "screws_needed_short": "Screws",
+    "cogs_needed_short": "Cogs",
+    "metal_needed_short": "Metal",
     "aegis": "Aegis",
     "cloudfist": "Cloudfist",
     "curator": "Curator",
